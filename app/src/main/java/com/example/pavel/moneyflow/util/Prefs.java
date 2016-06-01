@@ -7,6 +7,7 @@ public class Prefs {
 
     //------------------------Provider----------------------------
     public static final String AUTHORITY = "com.example.pavel.moneyflow.provider";
+
     public static String URI_TYPE_EXPENSE = "expenses";
     public static String URI_TYPE_EXPENSE_NAME = "expenses_name";
     public static String URI_TYPE_EXPENSES_JOINED = "expenses_joined";
@@ -29,5 +30,8 @@ public class Prefs {
     //_________________EXPENSES NAMES TABLE_______________________
     public static final String TABLE_EXPENSES_NAMES = "expenses_names";
     public static final String EXPENCE_NAMES_FIELDS_NAME = "name";
+
+    //_________________LOADER_______________________
+    public static final int ID_EXPENSE_NAMES = 1;
 
 }

@@ -65,6 +65,11 @@ public class DashboardActivity extends AppCompatActivity {
                 AddNewExpencyDialog expencyDialog = new AddNewExpencyDialog();
                 expencyDialog.show(getSupportFragmentManager(), "ED");
                 break;
+            case R.id.item_user_profile:
+                Intent intent = new Intent(this, ProfileActivity.class);
+                startActivity(intent);
+
+                break;
         }
         return true;
     }
