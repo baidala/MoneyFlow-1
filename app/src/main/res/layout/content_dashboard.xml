@@ -12,7 +12,15 @@
     tools:context=".activity.DashboardActivity"
     tools:showIn="@layout/activity_dashboard">
 
-    <Button
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <!---<Button
         android:text="@string/btnExpensesLabel"
         android:id="@+id/btnExpenses"
         android:onClick="onClickBtnExpenses"
@@ -49,5 +57,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
+    -->
 
 </RelativeLayout>

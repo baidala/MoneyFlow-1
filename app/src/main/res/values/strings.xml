@@ -89,4 +89,25 @@
     <string name="title_tab_cash_flow">CashFlow</string>
     <string name="title_tab_expences">Expences</string>
     <string name="title_tab_incomes">Incomes</string>
+
+    <string name="pref_category_account_info">Credentials</string>
+    <string name="pref_key_account_info_settings">account_info</string>
+    <string name="pref_key_login">login</string>
+    <string name="pref_summary_login">Edit login</string>
+    <string name="pref_title_login">Login</string>
+    <string name="pref_key_person_info_settings">person_info</string>
+    <string name="personal_data_preference_category">Personal data</string>
+    <string name="pref_key_password">password</string>
+    <string name="pref_summary_password_preference">Edit password</string>
+    <string name="pref_title_password">Password</string>
+    <string name="pref_key_email">email</string>
+    <string name="pref_title_email">Email address</string>
+    <string name="pref_title_name">First name</string>
+    <string name="pref_key_ame">name</string>
+    <string name="pref_key_last_name">last_name</string>
+    <string name="pref_title_last_name">Last name</string>
+    <string name="pref_key_sex">sex</string>
+    <string name="pref_title_sex">Sex</string>
+    <string name="item_menu_user_profile_tittle">Account info</string>
+
 </resources>

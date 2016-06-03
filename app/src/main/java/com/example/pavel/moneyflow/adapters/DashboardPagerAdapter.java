@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 
 import com.example.pavel.moneyflow.R;
+import com.example.pavel.moneyflow.fragments.ExpensesFragment;
 
 /**
  * Created by oracle on 6/3/16.
@@ -34,17 +35,16 @@ public class DashboardPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 defaultFragment = new DefaultFragment();
                 argBundle = new Bundle();
-                argBundle.putString(DefaultFragment.KEY_NAME, R.strings.title_tab_cash_flow);
+                argBundle.putString(DefaultFragment.KEY_NAME, R.string.title_tab_cash_flow);
                 defaultFragment.setArguments(argBundle);
                 return defaultFragment;
 
             case 1:
-
-                break;
+                return new ExpensesFragment();
             case 2:
                 defaultFragment = new DefaultFragment();
                 argBundle = new Bundle();
-                argBundle.putString(DefaultFragment.KEY_NAME, R.strings.title_tab_incomes);
+                argBundle.putString(DefaultFragment.KEY_NAME, R.string.title_tab_incomes);
                 defaultFragment.setArguments(argBundle);
                 return defaultFragment;
         }
