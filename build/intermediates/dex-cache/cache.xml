@@ -1,2 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.2.0_1ac73ebc3d8022a426a026686c2397b919704a1f.jar" />
+    </item>
+    <item
+        jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5f6020b944068197985173ed4050c80bcc57e86d">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/instant-run_1d58129e466155a2a429032aff3d594559413a7d.jar" />
+    </item>
+    <item
+        jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.0_968fa2138010a99124b13c3e9905c0e3ef0cc22b.jar" />
+    </item>
+    <item
+        jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.2.0_271e1de96580ef1da7a2eb11e25cba9d1c70b937.jar" />
+    </item>
+    <item
+        jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d129d3a88b73ece680d58863b816c4eb588a8a6e">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_f7bc70b244473caccf0f93e50428210456fc41d7.jar" />
+    </item>
+    <item
+        jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.0_dadf55fa8a28022c950919694c84a3829e6f36d6.jar" />
+    </item>
+    <item
+        jar="/home/oracle/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.8.3/65fd012581ded67bc20945d85c32b4598c3a9cf1/jsoup-1.8.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="65fd012581ded67bc20945d85c32b4598c3a9cf1">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/jsoup-1.8.3_7111b9ae8508c46c2ef459a884f2f16071ab2f37.jar" />
+    </item>
+    <item
+        jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.2.0_83782ea78757d5c835ae2d9d7300fcb0c79f9caa.jar" />
+    </item>
+    <item
+        jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.0_98bb8dc47a7bd371fd46bf02f5e3f2bbd3a420a1.jar" />
+    </item>
+    <item
+        jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.0_02be608952eca68c3c90a36f0212c6b083f550f5.jar" />
+    </item>
+    <item
+        jar="/opt/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.0_a3afa6c4d9f22acdcf2e96e6e37d0e09c2eb942b.jar" />
+    </item>
+
+</items>
