@@ -86,4 +86,7 @@
     <string name="personal_info">Personal info</string>
     <string name="key_login_pref">login</string>
     <string name="sumary_login_pref">login</string>
+    <string name="title_tab_cash_flow">CashFlow</string>
+    <string name="title_tab_expences">Expences</string>
+    <string name="title_tab_incomes">Incomes</string>
 </resources>
