@@ -12,7 +12,7 @@
         jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="5f6020b944068197985173ed4050c80bcc57e86d">
+        sha1="f58898e8dd838f5d3c06728bce8ee368861de775">
         <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/instant-run_1d58129e466155a2a429032aff3d594559413a7d.jar" />
     </item>
     <item
@@ -33,7 +33,7 @@
         jar="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="d129d3a88b73ece680d58863b816c4eb588a8a6e">
+        sha1="b2029c27f87b0706191eb26531b0d67541769ff2">
         <dex dex="/home/oracle/workspace/MoneyFlow-1/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_f7bc70b244473caccf0f93e50428210456fc41d7.jar" />
     </item>
     <item

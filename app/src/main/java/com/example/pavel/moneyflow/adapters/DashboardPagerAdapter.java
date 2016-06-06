@@ -35,7 +35,7 @@ public class DashboardPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 defaultFragment = new DefaultFragment();
                 argBundle = new Bundle();
-                argBundle.putString(DefaultFragment.KEY_NAME, R.string.title_tab_cash_flow);
+                argBundle.putString(DefaultFragment.KEY_NAME, context.getResources().getString(R.string.title_tab_cash_flow));
                 defaultFragment.setArguments(argBundle);
                 return defaultFragment;
 
@@ -44,7 +44,7 @@ public class DashboardPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 defaultFragment = new DefaultFragment();
                 argBundle = new Bundle();
-                argBundle.putString(DefaultFragment.KEY_NAME, R.string.title_tab_incomes);
+                argBundle.putString(DefaultFragment.KEY_NAME, context.getResources().getString(R.string.title_tab_incomes));
                 defaultFragment.setArguments(argBundle);
                 return defaultFragment;
         }
