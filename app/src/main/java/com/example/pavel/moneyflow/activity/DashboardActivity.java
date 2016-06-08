@@ -22,14 +22,17 @@ import com.example.pavel.moneyflow.adapters.DashboardPagerAdapter;
 import com.example.pavel.moneyflow.dialogs.AddNewExpencyDialog;
 import com.example.pavel.moneyflow.util.Prefs;
 
-public class DashboardActivity extends AppCompatActivity {
+
+
+public class DashboardActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
 
     Button btnExpenses;
     Button btnJoin;
     TextView tvExpenses;
-    TextView tvExpensesNames;
+
     DashboardPagerAdapter dashboardPagerAdapter;
     ViewPager viewPager;
+    Toolbar toolbar;
 
     //JUST TEST
 
@@ -39,12 +42,13 @@ public class DashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         dashboardPagerAdapter = new DashboardPagerAdapter(this, getSupportFragmentManager());
         viewPager = (ViewPager)findViewById(R.id.vpDashboard);
         viewPager.setAdapter(dashboardPagerAdapter);
+        viewPager.addOnPageChangeListener(this);
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tabDashboard);
         tabLayout.setupWithViewPager(viewPager);
@@ -131,5 +135,37 @@ public class DashboardActivity extends AppCompatActivity {
             Log.d(Prefs.LOG_TAG, "-----------------------------");
         }
 
+    }
+
+    public void setFragmentInfo(int position) {
+        switch (position) {
+            case 0:
+                toolbar.setTitle(R.string.title_tab_cash_flow);
+
+                break;
+            case 1:
+                toolbar.setTitle(R.string.title_tab_expences);
+                break;
+            case 2:
+                toolbar.setTitle(R.string.title_tab_incomes);
+                break;
+
+        }
+    }
+
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+        Log.d(Prefs.LOG_TAG, "onPageScrolled: " +" |" + position + " | "+ positionOffset+ " | "+ positionOffsetPixels);
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        Log.d(Prefs.LOG_TAG, "onPageSelected: " + " | " + position);
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+        Log.d(Prefs.LOG_TAG, "onPageScrollStateChanged: " + state);
     }
 }

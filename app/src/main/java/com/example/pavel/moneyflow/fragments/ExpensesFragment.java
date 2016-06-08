@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.pavel.moneyflow.R;
+import com.example.pavel.moneyflow.activity.DashboardActivity;
+import com.example.pavel.moneyflow.adapters.DashboardPagerAdapter;
 import com.example.pavel.moneyflow.util.Prefs;
 
 import java.util.HashMap;
@@ -31,6 +33,7 @@ public class ExpensesFragment extends Fragment implements LoaderManager.LoaderCa
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        ((DashboardActivity)getActivity()).setFragmentInfo(DashboardPagerAdapter.FRAGMENT_EXPENSES);
         View view =  inflater.inflate( R.layout.fragment_expenses, container , false);
         tvCurrentFragmentExpenses = (TextView)view.findViewById(R.id.tvCurrentFragmentExpenses);
         getActivity().getSupportLoaderManager().initLoader(1, null, this);

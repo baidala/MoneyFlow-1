@@ -13,12 +13,17 @@ import android.widget.TextView;
 
 
 import com.example.pavel.moneyflow.R;
+import com.example.pavel.moneyflow.activity.DashboardActivity;
 import com.example.pavel.moneyflow.fragments.ExpensesFragment;
 
 /**
  * Created by oracle on 6/3/16.
  */
 public class DashboardPagerAdapter extends FragmentPagerAdapter {
+
+    public final static int FRAGMENT_CASH_FLOW = 0;
+    public final static int FRAGMENT_EXPENSES = 1;
+    public final static int FRAGMENT_INCOMES = 2;
 
     Context context;
     public DashboardPagerAdapter(Context context, FragmentManager fm ) {
@@ -31,17 +36,19 @@ public class DashboardPagerAdapter extends FragmentPagerAdapter {
         DefaultFragment defaultFragment;
         Bundle argBundle;
 
+
         switch (position) {
-            case 0:
+            case FRAGMENT_CASH_FLOW:
+
                 defaultFragment = new DefaultFragment();
                 argBundle = new Bundle();
                 argBundle.putString(DefaultFragment.KEY_NAME, context.getResources().getString(R.string.title_tab_cash_flow));
                 defaultFragment.setArguments(argBundle);
                 return defaultFragment;
 
-            case 1:
+            case FRAGMENT_EXPENSES:
                 return new ExpensesFragment();
-            case 2:
+            case FRAGMENT_INCOMES:
                 defaultFragment = new DefaultFragment();
                 argBundle = new Bundle();
                 argBundle.putString(DefaultFragment.KEY_NAME, context.getResources().getString(R.string.title_tab_incomes));
@@ -60,11 +67,11 @@ public class DashboardPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position) {
-            case 0:
+            case FRAGMENT_CASH_FLOW:
                 return context.getResources().getString(R.string.title_tab_cash_flow);
-            case 1:
+            case FRAGMENT_EXPENSES:
                 return context.getResources().getString(R.string.title_tab_expences);
-            case 2:
+            case FRAGMENT_INCOMES:
                 return context.getResources().getString(R.string.title_tab_incomes);
         }
         return super.getPageTitle(position);
