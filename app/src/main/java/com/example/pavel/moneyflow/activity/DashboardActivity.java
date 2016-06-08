@@ -43,6 +43,7 @@ public class DashboardActivity extends AppCompatActivity implements ViewPager.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(R.string.app_name);
         setSupportActionBar(toolbar);
 
         dashboardPagerAdapter = new DashboardPagerAdapter(this, getSupportFragmentManager());
@@ -162,6 +163,20 @@ public class DashboardActivity extends AppCompatActivity implements ViewPager.On
     @Override
     public void onPageSelected(int position) {
         Log.d(Prefs.LOG_TAG, "onPageSelected: " + " | " + position);
+
+        switch (position) {
+            case 0:
+                toolbar.setTitle(R.string.app_name);
+
+
+                break;
+            case 1:
+                toolbar.setTitle(R.string.title_tab_expences);
+                break;
+            case 2:
+                toolbar.setTitle(R.string.title_tab_incomes);
+                break;
+        }
     }
 
     @Override
