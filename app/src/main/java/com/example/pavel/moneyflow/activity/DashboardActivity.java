@@ -33,8 +33,9 @@ public class DashboardActivity extends AppCompatActivity implements ViewPager.On
     DashboardPagerAdapter dashboardPagerAdapter;
     ViewPager viewPager;
     Toolbar toolbar;
+    int tabPosition = 0;
 
-    //JUST TEST
+
 
 
 
@@ -75,22 +76,49 @@ public class DashboardActivity extends AppCompatActivity implements ViewPager.On
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.menu_cash_flow, menu);
         return true;
     }
 
     @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+
+        switch (tabPosition){
+            case DashboardPagerAdapter.FRAGMENT_CASH_FLOW:
+                getMenuInflater().inflate(R.menu.menu_cash_flow, menu);
+                break;
+            case DashboardPagerAdapter.FRAGMENT_INCOMES:
+                getMenuInflater().inflate(R.menu.menu_incomes, menu);
+                break;
+            case DashboardPagerAdapter.FRAGMENT_EXPENSES:
+                getMenuInflater().inflate(R.menu.menu_expences, menu);
+                break;
+
+        }
+
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent;
         switch (item.getItemId()){
-            case R.id.item_expency:
-                AddNewExpencyDialog expencyDialog = new AddNewExpencyDialog();
-                expencyDialog.show(getSupportFragmentManager(), "ED");
+            case R.id.item_list_expences:
+                intent = new Intent(this, ExpensesActivity.class);
+                startActivity(intent);
+                //AddNewExpencyDialog expencyDialog = new AddNewExpencyDialog();
+                //expencyDialog.show(getSupportFragmentManager(), "ED");
                 break;
             case R.id.item_user_profile:
-                Intent intent = new Intent(this, ProfileActivity.class);
+                intent = new Intent(this, ProfileActivity.class);
                 startActivity(intent);
 
                 break;
+            case R.id.item_list_incomes:
+                AddNewExpencyDialog incomesDialog = new AddNewExpencyDialog();
+                incomesDialog.show(getSupportFragmentManager(), "ED");
+                break;
+
         }
         return true;
     }
@@ -164,11 +192,11 @@ public class DashboardActivity extends AppCompatActivity implements ViewPager.On
     public void onPageSelected(int position) {
         Log.d(Prefs.LOG_TAG, "onPageSelected: " + " | " + position);
 
-        switch (position) {
+        this.tabPosition = position;
+
+        switch (tabPosition) {
             case 0:
                 toolbar.setTitle(R.string.app_name);
-
-
                 break;
             case 1:
                 toolbar.setTitle(R.string.title_tab_expences);

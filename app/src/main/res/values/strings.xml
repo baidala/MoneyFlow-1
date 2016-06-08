@@ -109,5 +109,6 @@
     <string name="pref_key_sex">sex</string>
     <string name="pref_title_sex">Sex</string>
     <string name="item_menu_user_profile_tittle">Account info</string>
+    <string name="item_menu_incomes_text">incomes list</string>
 
 </resources>
